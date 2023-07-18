@@ -1,0 +1,37 @@
+.form-wrapper{
+    margin-top: 4%;
+    margin-bottom: 4%;
+    h1{
+        font-size: large;
+        color:var(--form-title-font-color);
+    }
+    .ant-form{
+        flex: 0.7;
+        border-radius: 8px;
+        box-shadow: -4px 4px 8px 0 rgba(60,66,87,.1), -12px 12px 24px 0 rgba(33,54,89,.06), -16px 20px 40px 0 rgba(89,116,166,.04);
+        background-color: #fff;
+        padding: 3%;    
+        padding: 1% 7% 1% 7%;
+        border: 0px;
+        border-radius: 10px;    
+        width: fit-content;
+        height: fit-content;
+        margin: auto ;    
+    }
+    .form-container .ant-form-item{
+        margin: 10px;
+        width: 100%;
+        label{
+            color:var(--form-label-font-color);
+            font-size: large;
+        }
+        .ant-btn{
+            width: 100%;
+        }
+        input{
+            color:var(--form-field-font-color);
+            background-color:var(--form-field-background-color);
+        }
+    }
+
+}

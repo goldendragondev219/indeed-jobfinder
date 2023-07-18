@@ -1,0 +1,95 @@
+@font-face {
+  font-family: poppins;
+  src: url("../../constants/fonts/PoppinsRegular.ttf");
+}
+
+.jobs-wrapper {
+  width: 100%;
+  padding-left: 2%;
+  padding-right: 2%;
+  .ant-table {
+    font-family: var(--font-family);
+    color: #d3d3d3;
+    border-color: #1f2021;
+    .delete-icon {
+      svg {
+        height: 1.5em;
+        width: 1.5em;
+      }
+    }
+
+    .ant-table-tbody tr.active td,.ant-table-tbody .ant-table-expanded-row td:has(.active){
+      background-color: var(--table-active-job-background);
+    }
+    .ant-table-tbody tr.hot td,.ant-table-tbody .ant-table-expanded-row td:has(.hot){
+      background-color: var(--table-hot-job-background);
+    }
+    .ant-table-tbody tr:hover td{
+      background-color: var(--table-row-hover-background);
+    }
+
+    .ant-table-tbody tr td {
+      border-top: none;
+      border-bottom: 2px solid #1f2021;
+      background: var(--tables-body-background);
+      color:var(--tables-body-text-color);
+    }
+    .ant-table-tbody > tr:last-child > td {
+      border-bottom: 2px solid #1f2021;
+    }
+    .ant-table-column-sorter {
+      color: var(--color-white);
+    }
+  }
+  .ant-table-thead tr th {
+    color: var(--color-white);
+    border-bottom: 2px solid #1f2021;
+    background-color: var(--tables-header-background);
+    color: var(--tables-header-text-color);
+  }
+  .ant-table-thead tr td {
+    background-color: var(--tables-header-background) !important;;
+  }
+
+  //table-pagination
+  .ant-pagination-item-link {
+    color: var(--color-white);
+  }
+  //checkbox header color removed
+  .ant-table-thead > tr > td {
+    background: transparent;
+    border-bottom: 2px solid #1f2021;
+  }
+
+  //sorter size and position
+  .ant-table-column-sorters {
+    display: block;
+    .ant-table-column-sorter-down {
+      font-size: 16px;
+    }
+  }
+  .ant-checkbox-checked .ant-checkbox-inner {
+    // background-color: #fcba2d;
+    border-color: #0a0a0a;
+  }
+  .ant-checkbox-inner:after {
+    // tick color
+    border-color: #000000;
+  }
+  
+  //Pagination
+  .ant-pagination .ant-pagination-item {
+    // background-color: #2e3032;
+    border-color: #2e3032;
+    margin-inline-end: 4px;
+    a {
+      color: var(--color-white);
+    }
+  }
+  .ant-pagination .ant-pagination-item-active {
+    border-color: var(--link-text-color-active);
+    a {
+      color: #000425;
+    }
+  }
+}

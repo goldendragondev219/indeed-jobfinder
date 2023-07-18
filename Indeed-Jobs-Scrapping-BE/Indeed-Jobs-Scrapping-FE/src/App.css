@@ -1,0 +1,238 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+@media (max-width: 1000px) {
+  
+  .ant-table-thead {
+    display: none;
+  }
+  .ant-table-row {
+    display: flex;
+    flex-direction: column;
+  }
+  .ant-table-cell-ellipsis {
+    border-bottom: 3px solid whitesmoke !important;
+  }
+}
+
+/* .App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+} */
+
+body{
+  color: var(--body-font-color);
+  font-family: var(--body-font);
+  font-size: var(--body-font-size-mobile);
+  font-weight: 300;
+  line-height: 1.4;
+  word-break: break-word;
+  font-size: var(--body-font-size);
+  background-image: url("./assets/mainbg.jpg");
+  background-position-x: initial;
+  background-position-y: initial;
+  background-size: initial;
+  background-attachment: initial;
+  background-origin: initial;
+  background-clip: initial;
+  background-color: initial;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.ant-spin-container{
+  color: black;
+}
+
+:root {
+  --container-width: 1200px;
+  --dnd-section-padding: 60px 16px;
+  --color-primary-1-hex: #a4b1f5;
+  --color-primary-1-rgba: 164,177,245;
+  --color-primary-2-hex: #4d58f2;
+  --color-primary-2-rgba: 77,88,242;
+  --color-primary-3-hex: #508bff;
+  --color-primary-3-rgba: 80,139,255;
+  --color-primary-4-hex: #ecedff;
+  --color-primary-4-rgba: 236,237,255;
+  --color-secondary-1-hex: #6c38ff;
+  --color-secondary-1-rgba: 108,56,255;
+  --color-secondary-2-hex: #7760ff;
+  --color-secondary-2-rgba: 119,96,255;
+  --color-secondary-3-hex: #5368de;
+  --color-secondary-3-rgba: 83,104,222;
+  --color-tertiary-1-hex: #ffcbf0;
+  --color-tertiary-1-rgba: 255,203,240;
+  --color-tertiary-2-hex: #f8cbff;
+  --color-tertiary-2-rgba: 248,203,255;
+  --color-tertiary-3-hex: #ff7c45;
+  --color-tertiary-3-rgba: 255,124,69;
+  --color-tertiary-4-hex: #fff0f3;
+  --color-tertiary-4-rgba: 255,240,243;
+  --color-tertiary-5-hex: #ff3194;
+  --color-tertiary-5-rgba: 255,49,148;
+  --color-anchor-1-hex: #111833;
+  --color-anchor-1-rgba: 17,24,51;
+  --color-anchor-2-hex: #474f74;
+  --color-anchor-2-rgba: 71,79,116;
+  --color-anchor-3-hex: #495377;
+  --color-anchor-3-rgba: 73,83,119;
+  --color-anchor-4-hex: #4c5986;
+  --color-anchor-4-rgba: 76,89,134;
+  --color-anchor-5-hex: #1e1737;
+  --color-anchor-5-rgba: 30,23,55;
+  --color-gray-1-hex: #6a749a;
+  --color-gray-1-rgba: 106,116,154;
+  --color-gray-2-hex: #dfe2ed;
+  --color-gray-2-rgba: 223,226,237;
+  --color-gray-3-hex: #979ebb;
+  --color-gray-3-rgba: 151,158,187;
+  --color-gray-4-hex: #f3f5ff;
+  --color-gray-4-rgba: 243,245,255;
+  --color-gray-5-hex: #8891b6;
+  --color-gray-5-rgba: 136,145,182;
+  --color-white-hex: #fff;
+  --color-white-rgba: 255,255,255;
+  --color-gradient-1: linear-gradient(180deg,#e6fef1 13.97%,rgba(205,240,248,0));
+  --color-gradient-2: linear-gradient(180deg,#f3e9ff 13.97%,#fff);
+  --color-gradient-3: linear-gradient(180deg,#fff2f2 13.97%,hsla(0,100%,98%,0));
+  --color-gradient-4: linear-gradient(90deg,#4966ff,#7760ff 26%,#b149ff 58%,#f450ee 88%,#f450a6);
+  --color-gradient-5: linear-gradient(45deg,#4d64f7 0.98%,#b967ff 50.63%,#f756c4);
+  --color-gradient-6: linear-gradient(97.22deg,#7adfff 4.55%,#7e8dff 26.5%,#aa87f4 48.64%,#f86fc9 74.74%,#ff5b27 130%);
+  --color-gradient-7: linear-gradient(-25deg,#ff327c,#f17027 96.03%);
+  --color-gradient-8: linear-gradient(45deg,#ff823c,#ff508f 48.96%,#ff5ee3);
+  --color-gradient-9: linear-gradient(50deg,#4d68f9 7.86%,#9039e8);
+  --color-gradient-10: linear-gradient(45deg,#e838ec 7.86%,#9948ff 46.11%,#4d66f8);
+  --color-gradient-11: linear-gradient(50deg,#9e2ae0 7.86%,#5d43fb);
+  --color-gradient-12: linear-gradient(45deg,#7388ff 8%,#9e79ff 28.96%,#f760dd 68%);
+  --color-gradient-13: linear-gradient(174.5deg,#1e1737 13.01%,#19166b 104.71%);
+  --color-gradient-14: linear-gradient(89.55deg,#4966ff 13.66%,#7760ff 33.9%,#b149ff 61.23%,#e54ff2 95.03%,#ff206e 139.63%);
+  --color-gradient-15: linear-gradient(97.22deg,#4d68f8 10.8%,#4f36e7 95.23%);
+  --color-gradient-16: linear-gradient(180deg,#ebeeff 3.83%,#fbe1ff);
+  --color-gradient-17: linear-gradient(102.17deg,#d8e3ff 10.51%,#fadbff 70.95%,#ffd1b9 129.82%);
+  --color-gradient-18: linear-gradient(128.2deg,#fff0fa 15.53%,#ffefef 72.02%);
+  --color-gradient-19: linear-gradient(123.87deg,#ece6ff 18.78%,#f8e8ff 85.48%);
+  --color-gradient-20: linear-gradient(123.87deg,#e8f3fe 18.78%,#e1e2ff 85.48%);
+  --body-font: "Inter";
+  --body-font-color: #111833;
+  --body-font-size: 16px;
+  --body-font-size-mobile: 16px;
+  --typo-primary-font: ;
+  --typo-secondary-font: ;
+  --typo-h1-font: "Gilroy";
+  --typo-h1-font-size: 60px;
+  --typo-h1-font-size-mobile: 45px;
+  --typo-h1-font-weight: 800;
+  --typo-h1-text-transform: none;
+  --typo-h1-text-color: #111833;
+  --typo-h2-font: "Gilroy";
+  --typo-h2-font-size: 45px;
+  --typo-h2-font-size-mobile: 40px;
+  --typo-h2-font-weight: 800;
+  --typo-h2-text-transform: none;
+  --typo-h2-text-color: #111833;
+  --typo-h3-font: "Gilroy";
+  --typo-h3-font-size: 37px;
+  --typo-h3-font-size-mobile: 33px;
+  --typo-h3-font-weight: 600;
+  --typo-h3-text-transform: none;
+  --typo-h3-text-color: #111833;
+  --typo-h4-font: "Gilroy";
+  --typo-h4-font-size: 28px;
+  --typo-h4-font-size-mobile: 25px;
+  --typo-h4-font-weight: 600;
+  --typo-h4-text-transform: none;
+  --typo-h4-text-color: #111833;
+  --typo-h5-font: "Gilroy";
+  --typo-h5-font-size: 22px;
+  --typo-h5-font-size-mobile: 20px;
+  --typo-h5-font-weight: 400;
+  --typo-h5-text-transform: none;
+  --typo-h5-text-color: theme.global_fonts.secondary.color;
+  --typo-h6-font: "Gilroy";
+  --typo-h6-font-size: 18px;
+  --typo-h6-font-size-mobile: 16px;
+  --typo-h6-font-weight: 400;
+  --typo-h6-text-transform: none;
+  --typo-h6-text-color: #111833;
+  --link-typo-text-font: "Inter";
+  --link-font-weight: ;
+  --link-text-color: #6c38ff;
+  --link-text-color-focus: #4410d7;
+  --link-text-color-active: #9460ff;
+  --button-text-font-style: "Inter";
+  --button-text-font-weight: 600;
+  --button-text-font-color: #fff;
+  --button-font-size: 16px;
+  --button-text-transformation: none;
+  --button-background-color: #6c38ff;
+  --button-border-color-focus: #4410d7;
+  --button-border-color-active: #9460ff;
+  --button-border-top: 1px solid #6c38ff;
+  --button-border-bottom: 1px solid #6c38ff;
+  --button-border-left: 1px solid #6c38ff;
+  --button-border-right: 1px solid #6c38ff;
+  --button-corner-radius: 100px;
+  --button-padding-top: 15px;
+  --button-padding-bottom: 15px;
+  --button-padding-left: 53px;
+  --button-padding-right: 53px;
+  --tables-header-text-color: #fff;
+  --tables-header-background: #6c38ff;
+  --tables-body-background: #fff;
+  --tables-body-text-color: #111833;
+  --tables-footer-background-color: #fff;
+  --tables-footer-text-color: #111833;
+  --tables-cells-padding-top: 18px;
+  --tables-cells-padding-bottom: 18px;
+  --tables-cells-padding-left: 18px;
+  --tables-cells-padding-right: 18px;
+  --tables-cells-border-top: 1px solid #111833;
+  --tables-cells-border-bottom: 1px solid #111833;
+  --tables-cells-border-left: 1px solid #111833;
+  --tables-cells-border-right: 1px solid #111833;
+  --form-title-font-color: #111833;
+  --form-label-font-color: #111833;
+  --form-help-text-font-color: #ffcbf0;
+  --form-field-placeholder-color: #979ebb;
+  --form-field-font-color: #6a749a;
+  --form-field-background-color: #fff;
+  --form-field-border-top: 1px solid #dfe2ed;
+  --form-field-border-bottom: 1px solid #dfe2ed;
+  --form-field-border-left: 1px solid #dfe2ed;
+  --form-field-border-right: 1px solid #dfe2ed;
+  --form-field-corner-radius: 100px;
+  
+  --table-active-job-background: rgb(170, 204, 170);
+  --table-hot-job-background: rgb(211, 175, 175);
+  --table-row-hover-background:rgb(204, 197, 197);
+}

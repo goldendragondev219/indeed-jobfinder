@@ -1,0 +1,29 @@
+.jobs-pagination-wrapper {
+  margin-top: 1%;
+  display: flex;
+  justify-content: flex-end;
+  .ant-pagination-item-link {
+    //< color >
+    color: #ffffff !important;
+  }
+  .ant-pagination-item-container .ant-pagination-item-link-icon {
+    color: var(--secondary-color) !important;
+  }
+  .ant-pagination-item {
+    background-color: var(--main-color) !important;
+  }
+  .ant-pagination-item a {
+    // pagination number color
+    color: #ffffff;
+  }
+  .ant-pagination-item a:hover {
+    color: var(--secondary-color) !important;
+  }
+  .ant-pagination-item-active a {
+    color: var(--secondary-color) !important;
+  }
+  //border color
+  .ant-pagination-item-active {
+    border-color: var(--secondary-color);
+  }
+}
